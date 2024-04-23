@@ -1,0 +1,48 @@
+#treasure-hunt; engine banal
+Sigma:
+  N
+  E
+  W
+  S
+End
+#
+States:
+  q0, S
+  q1
+  q2
+  q3
+  q4
+  q5, F
+  q6
+End
+#
+Transitions:
+  q0,N,q0
+  q0,W,q0
+  q0,S,q0
+  q0,E,q1
+  q1, W, q0
+  q1, S, q1
+  q1, E, q4
+  q1, N, q2
+  q2,S,q3
+  q2,N,q2
+  q2,W,q2
+  q2,E,q2
+  q3,S,q3
+  q3,N,q2
+  q3,W,q6
+  q3,E,q5
+  q4,S,q4
+  q4,N,q4
+  q4,W,q1
+  q4,E,q4
+  q5,S,q5
+  q5,N,q5
+  q5,W,q3
+  q5,E,q5
+  q6,S,q6
+  q6,N,q6
+  q6,W,q6
+  q6,E,q3
+End
